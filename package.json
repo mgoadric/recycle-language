@@ -1,0 +1,25 @@
+{
+  "name": "recycle-language",
+  "displayName": "RECYCLE Language",
+  "description": "Syntax highlighting for RECYCLE Language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.102.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "recycle",
+      "aliases": ["Recycle", "recycle"],
+      "extensions": [".rcy"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "recycle",
+      "scopeName": "source.recycle",
+      "path": "./syntaxes/recycle.tmLanguage.json"
+    }]
+  }
+}

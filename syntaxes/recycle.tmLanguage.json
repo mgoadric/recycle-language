@@ -1,0 +1,56 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Recycle",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.recycle",
+				"match": "(stage|do|choice)"
+			},
+		    {
+				"name": "keyword.other.recycle",
+				"match": "(setup|scoring)"
+			},
+		    {
+				"name": "storage.type.recycle",
+				"match": "(str|sto|points|vloc|hloc|iloc|oloc)"
+			},
+		    {
+				"name": "keyword.operator.recycle",
+				"match": "(cardatt|set|inc|dec |move|cycle|create|shuffle|repeat|==|>=|<=|!=|size|top|end|any|all|and|or|max|min|using|union|partition|tuple|owner)"
+			},
+		    {
+				"name": "comment.line.recycle",
+				"match": ";;.*"
+			},
+		    {
+				"name": "storage.modifier.recycle",
+				"match": "(teams|team|players|player|game|current|next|previous|other)"
+			}]
+		},
+		"strings": {
+			"patterns": [{
+				"name": "variable.other.recycle",
+				"match": "\\'[A-Z]+"
+			},
+			{
+				"name": "string.unquoted.recycle",
+				"match": "[A-Z]+"
+			},
+			{
+				"name": "constant.character.recycle",
+				"match": "[0-9]+"
+			}
+			]
+		}
+	},
+	"scopeName": "source.recycle"
+}
