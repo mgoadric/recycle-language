@@ -21,11 +21,11 @@
 			},
 		    {
 				"name": "storage.type.recycle",
-				"match": "(str|sto|points|vloc|hloc|iloc|oloc)"
+				"match": "(str|sto|points|vloc|hloc|iloc|oloc|mem)"
 			},
 		    {
 				"name": "keyword.operator.recycle",
-				"match": "(cardatt|set|inc|dec |move|cycle|create|shuffle|repeat|==|>=|<=|!=|size|top|end|any|all|and|or|max|min|using|union|partition|tuple|owner)"
+				"match": "(cardatt|set|inc|dec |move|cycle|create|shuffle|repeat|==|>=|<=|!=|size|top|end|any|all|and|or|max|min|using|union|partition|tuple|owner|remember|forget|filter|score)"
 			},
 		    {
 				"name": "comment.line.recycle",
